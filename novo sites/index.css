@@ -16,6 +16,24 @@ body{
     margin: 0 auto;
 
 }
+.flex{
+    display: flexbox;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 500px;
+    background-color: brown;
+    border: 0;
+    border-radius: 30px;
+    cursor:pointer;
+    color: white;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px brown;
+    transform: scale(1.05);
+}
+
 
 /*estilo do cabeçario*/
 header{
@@ -45,21 +63,59 @@ header nav li{
     display: inline-block;
     padding: 0 40px;
 }
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 15px;
-    font-weight: 500px;
-    background-color: brown;
-    border: 0;
-    border-radius: 30px;
-    cursor:pointer;
-    color: white;
-}
 img{
     border: 0px;
     border-radius: 50px;
     height: 100px;
 }
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px brown;
+
+/*Topo do site*/
+
+section .topo-do-site{
+    padding: 40px 4%;
+
+
+}
+section .topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+.txt-topo-site h1{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.txt-topo-site h1 spam{
+    color: blueviolet;
+    font-size: 40px;
+    border-radius: 30px;
+}
+.txt-topo-site p{
+    color: white;
+    font-size: 15px;
+    margin: 40px 0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes flutuante{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 100px;
+    }
+
+}
+.img-topo-site{
+    position: relative;
+    animation: flutuante 4s ease-in-out infinite alternate;
+    background-color: black;
+    height: auto;
+    width: auto;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    align-items: center;
 }
