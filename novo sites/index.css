@@ -9,6 +9,7 @@
 body{
     background-color: black;
     height: 100vh;
+    background-image: url(imagens/images.jpeg);
 
 
 }
@@ -114,7 +115,6 @@ section .topo-do-site.flex{
 .img-topo-site{
     position: relative;
     animation: flutuante 4s ease-in-out infinite alternate;
-    background-color: black;
     height: auto;
     width: auto;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
